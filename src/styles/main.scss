@@ -1,0 +1,13 @@
+@import "../../node_modules/font-awesome/scss/font-awesome.scss";
+@import "../../node_modules/normalize.scss/normalize.scss";
+
+@import "global/fonts.scss";
+@import "global/vars.scss";
+@import "global/sprite.scss";
+@import "global/mixins.scss";
+@import "global/base.scss";
+@import "global/common.scss";
+
+@import "sections/header.scss";
+@import "sections/contacts.scss";
+@import "sections/nav.scss";
