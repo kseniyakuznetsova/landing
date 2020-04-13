@@ -1,36 +1,35 @@
-.container{
-    max-width: 1024px;
-    margin: auto;
+.container {
+  max-width: 1024px;
+  margin: auto;
 }
 
 .button {
-    display: inline-block;
-    border-radius: 3px;
-    padding: 10px 22px 7px;
-    text-decoration: none;
-    color: #fff;
-    transition: 0.3s;
-  
-    &--red {
-      background: $primary-color;     
-  
-      &:hover {
-        background: lighten($primary-color, 7%);
-        
-      }
-    }
-  
-    &--yellow {
-      background: #f8cd53;  
+  display: inline-block;
+  border-radius: 3px;
+  padding: 10px 22px 7px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
 
-      &:hover {
-        background: lighten(#f8cd53, 7%);
-      }
+  &--red {
+    background: $primary-color;
+
+    &:hover {
+      background: lighten($primary-color, 7%);
     }
-  
-    &--text-uppercase {
-      text-transform: uppercase;
+  }
+
+  &--yellow {
+    background: #f8cd53;
+
+    &:hover {
+      background: lighten(#f8cd53, 7%);
     }
+  }
+
+  &--text-uppercase {
+    text-transform: uppercase;
+  }
 }
 
 .title {
@@ -48,18 +47,22 @@
     font-size: 1.25rem;
     font-family: $ff-main-light;
   }
-  
+
   &--with-bottom-line {
     position: relative;
-    
+
     &:after {
       @include centerer-w();
-      
-      content: '';
+
+      content: "";
       bottom: -16px;
       width: 47px;
       height: 5px;
       background: $secondary-color;
     }
   }
+}
+
+.is-hidden {
+  display: none;
 }
