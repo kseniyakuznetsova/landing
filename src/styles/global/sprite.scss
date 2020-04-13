@@ -42,10 +42,21 @@ $message-total-width: 167px;
 $message-total-height: 160px;
 $message-image: '../images/sprite.png';
 $message: (0px, 0px, 0px, 0px, 84px, 81px, 167px, 160px, '../images/sprite.png', 'message', );
+$work-item-name: 'work-item';
+$work-item-x: 66px;
+$work-item-y: 81px;
+$work-item-offset-x: -66px;
+$work-item-offset-y: -81px;
+$work-item-width: 36px;
+$work-item-height: 37px;
+$work-item-total-width: 167px;
+$work-item-total-height: 160px;
+$work-item-image: '../images/sprite.png';
+$work-item: (66px, 81px, -66px, -81px, 36px, 37px, 167px, 160px, '../images/sprite.png', 'work-item', );
 $spritesheet-width: 167px;
 $spritesheet-height: 160px;
 $spritesheet-image: '../images/sprite.png';
-$spritesheet-sprites: ($book, $like, $message, );
+$spritesheet-sprites: ($book, $like, $message, $work-item, );
 $spritesheet: (167px, 160px, '../images/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
