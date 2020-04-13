@@ -1,37 +1,49 @@
 .nav {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 7px;
+  margin-right: 15px;
+
+  @media (max-width: 1000px) {
+    margin-bottom: 25px;
+  }
+
+  &__link {
     display: inline-block;
     vertical-align: top;
-    padding-top: 7px;
-    margin-right: 15px;
-  
-    &__link {
-      display: inline-block;
-      vertical-align: top;
-      padding: 10px;
-      font-family: $ff-main-bold;
-      text-decoration: none;
-      text-transform: capitalize;
-      color: $secondary-color;
-      transition: 0.3s;
-  
-        &:hover,
-        &--active {
-            color: $primary-color;
-        }
-    
-        &:after {
-            content: '';
-            display: inline-block;
-            vertical-align: middle;
-            width: 5px;
-            height: 5px;
-            margin-left: 15px;
-            border-radius: 50%;
-            background: $secondary-color;
-        }
-    
-        &:last-child:after {
-            display: none;
-        }
+    padding: 10px;
+    font-family: $ff-main-bold;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: $secondary-color;
+    transition: 0.3s;
+
+    &:hover,
+    &--active {
+      color: $primary-color;
     }
+
+    &:after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 5px;
+      height: 5px;
+      margin-left: 15px;
+      border-radius: 50%;
+      background: $secondary-color;
+    }
+
+    &:last-child:after {
+      display: none;
+    }
+
+    @media (max-width: 530px) {
+      display: block;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
 }

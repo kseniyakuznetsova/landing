@@ -1,18 +1,24 @@
 body {
-    font-family: $ff-main;
-    font-size: 1rem;
-    line-height: 1.2;
+  font-family: $ff-main;
+  font-size: 1rem;
+  line-height: 1.2;
 }
-  
+
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
+
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
 }
-  
-*, *:before, *:after {
-    box-sizing: inherit;
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
-  
+
 ul,
 ol {
-    list-style-type: none;
+  list-style-type: none;
 }

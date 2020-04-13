@@ -43,6 +43,10 @@
   text-align: center;
   background-color: #fff;
 
+  @media (max-width: 800px) {
+    width: 90%;
+  }
+
   &-container {
     padding-top: 30px;
   }
