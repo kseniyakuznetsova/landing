@@ -25,6 +25,7 @@
   }
 
   .arrow-down {
+    padding: 20px;
     @include centerer-wh();
 
     .fa {

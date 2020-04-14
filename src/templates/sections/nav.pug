@@ -1,4 +1,13 @@
+- 
+    var navItems = [
+        {name: 'Home', section: 'header'}, 
+        {name: 'About as', section: 'about'},
+        {name: 'Our approach', section: 'approach'},
+        {name: 'Our work', section: 'work'}
+    ];
 nav.nav
-    - var navItems = ['Home', 'About as', 'Our approach', 'Our work']
-    each item in navItems
-        a.nav__link(href='#')= item
+    each item, index in navItems
+        if index === 0
+            a.nav__link.nav__link--active(href="#" data-link= item.section)= item.name
+        else
+            a.nav__link(href='#' data-link= item.section)= item.name
